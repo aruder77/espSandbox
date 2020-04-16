@@ -138,8 +138,10 @@ Controller::Controller()
   // create all modules 
   networkControl = NetworkControl::getInstance();
   displayControl = DisplayControl::getInstance();
+  pwmReader = PWMReader::getInstance();
   modules.addModule(networkControl);
   modules.addModule(displayControl);
+  modules.addModule(pwmReader);
 
   setup();
 }
