@@ -104,6 +104,8 @@ Controller::Controller()
   displayControl = DisplayControl::getInstance();
   modules.addModule(displayControl);
 
+  modules.addModule(new TemperatureReader());
+
   Homie_setFirmware("esp32Generic", "1.0.0");
   Homie_setBrand("esp32Generic");  
   Homie.setLoopFunction([]() { controller->workLoop(); } );  

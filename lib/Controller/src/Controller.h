@@ -21,6 +21,7 @@
 #include <DisplayControl.h>
 #include <Module.h>
 #include <Homie.h>
+#include <TemperatureReader.h>
 
 
 class Modules {

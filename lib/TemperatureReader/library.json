@@ -1,0 +1,5 @@
+{
+  "name": "TemperatureReader",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
